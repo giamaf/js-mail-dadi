@@ -30,13 +30,13 @@ randomButton.addEventListener('click', function () {
     let winnerName = ''
     // VALIDO L'OPERAZIONE PER STABILIRE UN VINCITORE
     if (randomPlayer === randomCPU) {
-        winnerName = "Draw 🤡";
+        winnerName = "🔁";
     } else {
         if (randomPlayer > randomCPU) {
-            winnerName = "Player";
+            winnerName = "🎅🏼";
         }
         else {
-            winnerName = "CPU"
+            winnerName = "💻"
         }
     }
 
@@ -76,4 +76,17 @@ const emailAccepted = [
     'pincopallo@gmail.com',
     'pallopinco@gmail.it',
     'mario.rossi@yahoo.com'];
-console.table(emailAccepted);
+// console.table(emailAccepted);
+// console.table(emailAccepted.lenght);
+
+//! 3 - AL CLICK SUL TASTO "LOGIN"
+loginButton.addEventListener('click', function () {
+    const emailValue = emailUser.value;
+
+    for (let i = 0; i < 10; i++) {
+        const acceptedEmail = emailAccepted[i];
+
+
+    }
+
+})
