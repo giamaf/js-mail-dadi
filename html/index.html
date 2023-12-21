@@ -30,7 +30,7 @@
 
 <body>
     <main>
-        <section class="nut-game container py-5">
+        <section class="nuts-game container py-5">
             <div class="card">
                 <div class="card-header text-center">
                     <h2>Gioco dei dadi</h2>
@@ -57,7 +57,32 @@
                         <button class="btn btn-primary" type="submit" id="random-button">Genera</button>
                     </div>
                 </div>
+            </div>
+        </section>
 
+        <section class="login-exercise container py-5">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h2>Login</h2>
+                </div>
+                <div class="card-body">
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-auto">
+                            <label for="label-instruction" class="visually-hidden">Inserisci la tua mail</label>
+                            <input type="text" readonly class="form-control-plaintext" id="label-instruction"
+                                value="Inserisci la tua mail">
+                        </div>
+                        <div class="col-6">
+                            <label for="user-email" class="visually-hidden">Email</label>
+                            <input type="email" class="form-control" id="user-email"
+                                placeholder="es: gianluca.maffucci@hotmail.com">
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-primary mb-3" id="login-button">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
