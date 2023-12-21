@@ -1,6 +1,6 @@
 console.log('JS OK')
 
-// ANALISI
+// ANALISI - ESERCIZIO 1 - NUTS GAME
 
 // 1 - RECUPERO GLI EVENTUALI ELEMENTI DAL DOM
 // 2 - AL CLICK SUL TASTO "RANDOM" GENERO DUE NUMERI CASUALI (PLAYER,PC) TRA 1 e 6
@@ -47,3 +47,26 @@ randomButton.addEventListener('click', function () {
     winner.innerHTML = winnerName;
 
 })
+
+// ------------------------------------------------------------------------- \\
+
+// ANALISI - ESERCIZIO 2 - LOGIN
+
+// 1 - RECUPERO GLI EVENTUALI ELEMENTI DAL DOM
+// 2 - CREO UN ARRAY DI MAIL AUTORIZZATE ALL'ACCESSO
+
+//! 3 - AL CLICK SUL TASTO "LOGIN"
+//! -----------------------------------
+//! 1 - RECUPERO IL VALORE DELLA MAIL INSERITO DALL'UTENTE
+//! 2 - VERIFICO CHE LA MAIL INSERITA RIENTRI NELL'ARRAY DI INDIRIZZI AUTORIZZATI
+//! 3 - STAMPO UN MESSAGGIO DI ESITO ALL'UTENTE
+
+// 1 - RECUPERO GLI EVENTUALI ELEMENTI DAL DOM
+
+// FORM ELEMENTS
+const emailUser = document.querySelector('.login-exercise .card-body .col-6 input');
+const feedValidation = document.querySelector('.login-exercise .card-body .col-6 div');
+
+// LOGIN BUTTON
+const loginButton = document.getElementById('login-button');
+
