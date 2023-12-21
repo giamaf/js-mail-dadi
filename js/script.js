@@ -70,3 +70,10 @@ const feedValidation = document.querySelector('.login-exercise .card-body .col-6
 // LOGIN BUTTON
 const loginButton = document.getElementById('login-button');
 
+// 2 - CREO UN ARRAY DI MAIL AUTORIZZATE ALL'ACCESSO
+const emailAccepted = [
+    'gianluca.maffucci@hotmail.com',
+    'pincopallo@gmail.com',
+    'pallopinco@gmail.it',
+    'mario.rossi@yahoo.com'];
+console.table(emailAccepted);
