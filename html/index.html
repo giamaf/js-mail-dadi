@@ -72,10 +72,13 @@
                             <input type="text" readonly class="form-control-plaintext" id="label-instruction"
                                 value="Inserisci la tua mail">
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 text-start">
                             <label for="user-email" class="visually-hidden">Email</label>
                             <input type="email" class="form-control" id="user-email"
                                 placeholder="es: gianluca.maffucci@hotmail.com">
+                            <div id="validation-feed" class="valid-feedback d-none">
+                                Inserisci un indirizzo mail corretto.
+                            </div>
                         </div>
                         <div class="col-auto">
                             <button type="button" class="btn btn-primary mb-3" id="login-button">Login</button>
