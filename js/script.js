@@ -15,7 +15,7 @@ const playerNrandom = document.getElementById('player-random-number');
 const cpuNrandom = document.getElementById('cpu-random-number');
 
 // VINCITORE
-const winnerName = document.getElementById('winner-name');
+const winner = document.getElementById('winner-name');
 
 // BUTTON
 const randomButton = document.getElementById('random-button');
@@ -26,5 +26,24 @@ const randomButton = document.getElementById('random-button');
 randomButton.addEventListener('click', function () {
     const randomPlayer = Math.floor(Math.random() * 6) + 1;
     const randomCPU = Math.floor(Math.random() * 6) + 1;
+
+    let winnerName = ''
+    // VALIDO L'OPERAZIONE PER STABILIRE UN VINCITORE
+    if (randomPlayer === randomCPU) {
+        winnerName = "Draw 🤡";
+    } else {
+        if (randomPlayer > randomCPU) {
+            winnerName = "Player";
+        }
+        else {
+            winnerName = "CPU"
+        }
+    }
+
+    // STAMPO IN PAGINA GLI ELEMENTI
+
+    playerNrandom.innerHTML = randomPlayer;
+    cpuNrandom.innerHTML = randomCPU;
+    winner.innerHTML = winnerName;
 
 })
